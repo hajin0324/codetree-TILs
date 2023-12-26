@@ -9,7 +9,7 @@ if a > b:
     else:
         print(c)
 else:
-    if b > c:
+    if b < c:
         print(b)
     elif a > c:
         print(a)
