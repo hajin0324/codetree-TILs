@@ -1,14 +1,14 @@
-n = int(input())
+m = int(input())
 
-for i in range(n):
-    m = int(input())
-
+for i in range(m):
+    n = int(input())
     cnt = 0
-    while m != 1:
-        if m % 2 == 0:
-            m //= 2
+
+    while n != 1:
+        if n % 2 == 0:
+            n /= 2
         else:
-            m = m * 3 + 1
+            n = n * 3 + 1
         cnt += 1
 
     print(cnt)
