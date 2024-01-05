@@ -3,7 +3,7 @@ def is_magic_number(n):
 
 
 n = int(input())
-if is_magic_number:
+if is_magic_number(n):
     print("Yes")
 else:
     print("No")
