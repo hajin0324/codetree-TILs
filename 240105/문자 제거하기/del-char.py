@@ -1,11 +1,11 @@
 s = input()
+s = list(s)
 
 while len(s) != 1:
-    n = int(input())
+    idx = int(input())
+    
+    if idx >= len(s):
+        idx = -1
 
-    if n > len(s):
-        s = s[:-1]
-    else:
-        s = s[:n] + s[n + 1:]
-
-    print(s)
+    s.pop(idx)
+    print(''.join(s))
