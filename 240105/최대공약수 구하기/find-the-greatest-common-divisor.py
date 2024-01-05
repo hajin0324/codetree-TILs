@@ -8,4 +8,4 @@ def find_gcd(n, m):
 
 
 n, m = map(int, input().split())
-gcd(n, m)
+find_gcd(n, m)
