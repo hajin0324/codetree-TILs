@@ -1,6 +1,3 @@
-n, m = map(int, input().split())
-
-
 def find_lcm(n, m):
     lcm = n * m
     for i in range(max(n, m), n * m):
@@ -10,4 +7,5 @@ def find_lcm(n, m):
     print(lcm)
 
 
+n, m = map(int, input().split())
 find_lcm(n, m)
