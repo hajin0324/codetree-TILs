@@ -2,7 +2,7 @@ a = input()
 c = input()
 
 for elem in c:
-    if c == 'L':
+    if elem == 'L':
         a = a[1:] + a[0]
     else:
         a = a[-1] + a[:-1]
