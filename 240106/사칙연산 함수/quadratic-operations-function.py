@@ -3,8 +3,6 @@ def plus(a, c):
 
 
 def minus(a, c):
-    if a < c:
-        a, c = c, a
     return a - c
 
 
