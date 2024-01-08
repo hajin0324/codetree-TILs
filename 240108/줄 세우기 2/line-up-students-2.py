@@ -11,7 +11,7 @@ for i in range(n):
     height, weight = map(int, input().split())
     students.append(Student(height, weight, i + 1))
 
-students.sort(key=lambda x: (x.height, -x.height))
+students.sort(key=lambda x: (x.height, -x.weight))
 
 for s in students:
     print(s.height, s.weight, s.number)
