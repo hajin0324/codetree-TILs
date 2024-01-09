@@ -19,15 +19,16 @@ for i in range(m):
         b[idx] = b[idx - 1] + v
         idx += 1
 
-cnt = -1
-f = 'o'
-for i in range(1, 20000):
+leader, cnt = 0, 0
+for i in range(1, idx):
+    if a[i] > b[i]:
+        if leader == 2:
+            cnt += 1
+        leader = 1
 
-    if f != 'b' and a[i] < b[i]:
-        cnt += 1
-        f = 'b'
-    elif f != 'r' and a[i] > b[i]:
-        cnt += 1
-        f = 'r'
+    elif a[i] < b[i]:
+        if leader == 1:
+            cnt += 1
+        leader = 2
 
 print(cnt)
