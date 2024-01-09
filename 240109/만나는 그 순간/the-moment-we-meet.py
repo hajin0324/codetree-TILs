@@ -20,7 +20,7 @@ for _ in range(m):
         idx += 1
 
 meet = -1
-for i in range(1, 10000):
+for i in range(1, idx):
     if a_move[i] == b_move[i]:
         meet = i
         break
