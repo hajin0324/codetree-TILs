@@ -9,10 +9,10 @@ for i in range(n):
 
     if i == 0 or num == pre:
         cnt += 1
-        pre = num
     else:
-        max_cnt = max(max_cnt, cnt)
         cnt = 1
-        pre = num
 
+    pre = num
+    max_cnt = max(max_cnt, cnt)
+        
 print(max_cnt)
