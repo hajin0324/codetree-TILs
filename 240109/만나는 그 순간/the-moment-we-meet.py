@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 
-a_move = [0 for _ in range(10000)]
-b_move = [0 for _ in range(10000)]
+a_move = [0 for _ in range(1000000)]
+b_move = [0 for _ in range(1000000)]
 
 idx = 1
 for _ in range(n):
