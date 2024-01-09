@@ -7,7 +7,7 @@ rect = [
     for _ in range(MAX_R)
 ]
 
-for i in range(1, 3):
+for i in range(1, n + 1):
     x1, y1, x2, y2 = map(int, input().split())
     x1, y1, x2, y2 = x1 + OFFSET, y1 + OFFSET, x2 + OFFSET, y2 + OFFSET
 
@@ -18,6 +18,6 @@ for i in range(1, 3):
 area = 0
 for i in range(MAX_R):
     for j in range(MAX_R):
-        if rect[i][j] == 2:
+        if rect[i][j] >= 2 and rect[i][j] % 2 == 0:
             area += 1
 print(area)
