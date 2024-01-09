@@ -1,6 +1,6 @@
 n = int(input())
-tile = [[0, 0, 0] for _ in range(2000)]
-idx = 1000
+tile = [[0, 0, 0] for _ in range(200000)]
+idx = 100000
 
 for _ in range(n):
     x, d = input().split()
