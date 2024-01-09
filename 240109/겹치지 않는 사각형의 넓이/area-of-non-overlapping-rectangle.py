@@ -19,6 +19,6 @@ area = 0
 for i in range(MAX_R + 1):
     for j in range(MAX_R + 1):
         if grid[i][j] != 0:
-            ans += 1
+            area += 1
 
 print(area)
