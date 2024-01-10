@@ -3,8 +3,8 @@ n, m = map(int, input().split())
 a_speed = [tuple(map(int, input().split())) for _ in range(n)]
 b_speed = [tuple(map(int, input().split())) for _ in range(m)]
 
-a = [0] * 100000
-b = [0] * 100000
+a = [0] * 1000000
+b = [0] * 1000000
 
 # 시간에 따른 A의 위치
 a_idx = 1
