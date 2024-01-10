@@ -6,9 +6,9 @@ dx, dy = [1, 0, -1, 0], [0, -1, 0, 1]
 
 for _ in range(n):
     d, c = input().split()
-    d, c = d_list[d], int(c)
+    dir_num, dist = d_list[d], int(c)
 
-    x += dx[d] * c 
-    y += dy[d] * c
+    x += dx[dir_num] * dist
+    y += dy[dir_num] * dist
 
 print(x, y)
