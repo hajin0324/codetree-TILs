@@ -2,7 +2,7 @@ dirs = input()
 x, y = 0, 0
 
 dir_num = 3
-dx, dy = [1, 0, -1, 0], [0, -1, 0, -1]
+dx, dy = [1, 0, -1, 0], [0, -1, 0, 1]
 
 for c in dirs:
     if c == "L":
