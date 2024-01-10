@@ -5,11 +5,9 @@ handshake.sort(key=lambda x: x[0])
 infection[p] = 1
 
 for s, x, y in handshake:
-    if infection[x] >= 1 and infection[x] < t or infection[y] >= 1 and infection[y] < t:
+    if (infection[x] >= 1 and infection[x] <= k) or (infection[y] >= 1 and infection[y] <= k):
         infection[x] += 1
         infection[y] += 1
 
 for elem in infection[1:]:
-    if elem >= 1:
-        elem = 1
-    print(elem, end="")
+    print(1 if elem >= 1 else 0, end="")
