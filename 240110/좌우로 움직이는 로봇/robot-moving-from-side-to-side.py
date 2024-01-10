@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 
-a = [0] * 1000000
-b = [0] * 1000000
+a = [0] * 1000001
+b = [0] * 1000001
 
 a_idx = 1
 for _ in range(n):
