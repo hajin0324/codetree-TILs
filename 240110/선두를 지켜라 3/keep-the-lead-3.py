@@ -1,21 +1,20 @@
 n, m = map(int, input().split())
 
-a_speed = [tuple(map(int, input().split())) for _ in range(n)]
-b_speed = [tuple(map(int, input().split())) for _ in range(m)]
-
 a = [0] * 1000000
 b = [0] * 1000000
 
 # 시간에 따른 A의 위치
 a_idx = 1
-for v, t in a_speed:
+for _ in range(n):
+    v, t = map(int, input().split())
     for _ in range(t):
         a[a_idx] = a[a_idx - 1] + v 
         a_idx += 1
 
 # 시간에 따른 B의 위치
 b_idx = 1
-for v, t in b_speed:
+for _ in range(m):
+    v, t = map(int, input().split())
     for _ in range(t):
         b[b_idx] = b[b_idx - 1] + v
         b_idx += 1
