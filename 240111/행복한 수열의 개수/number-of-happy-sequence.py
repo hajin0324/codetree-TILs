@@ -21,13 +21,13 @@ for i in range(n):
             ans += 2
             break
 
-        for k in range(m - 1):
+        for k in range(m - 2):
             if grid[i][j + k] != grid[i][j + k + 1]:
                 break
             ans += 1
 
         for k in range(m - 1):
-            if grid[j][i + k] != grid[j][i + k + 1]:
+            if grid[j + k][i] != grid[j + k + 1][i]:
                 break
             ans += 1
             
