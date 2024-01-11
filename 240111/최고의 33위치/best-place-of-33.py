@@ -15,9 +15,9 @@ def get_coin_num(x, y):
 
 
 max_coin = 0
-for i in range(n - 2):
-    for j in range(n - 2):
-        coin = get_coin_num(i, j)
+for row in range(n - 2):
+    for col in range(n - 2):
+        coin = get_coin_num(row, col)
         max_coin = max(max_coin, coin)
 
 print(max_coin)
