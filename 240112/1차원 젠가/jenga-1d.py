@@ -1,20 +1,15 @@
 n = int(input())
 zenga = [int(input()) for _ in range(n)]
-temp = [0] * n
 
-for _ in range(2):
-    s, e = map(int, input().split())
-    for i in range(s - 1, e):
-        zenga[i] = 0
-    
-    idx = 0
-    for n in zenga:
-        if n != 0:
-            temp[idx] = n
-            idx += 1
+s1, e1 = map(int, input().split())
+s2, e2 = map(int, input().split())
 
-    zenga = temp[:]
+for i in range(s1 - 1, e1):
+    zenga.pop(s1 - 1)
 
-print(idx)
-for elem in zenga[:idx]:
+for i in range(s2 - 1, e2):
+    zenga.pop(s2 - 1)
+
+print(len(zenga))
+for elem in zenga:
     print(elem)
