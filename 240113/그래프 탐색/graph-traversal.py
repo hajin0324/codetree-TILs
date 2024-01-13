@@ -3,8 +3,9 @@ graph = [[] for _ in range(n + 1)]
 visited = [False] * (n + 1)
 cnt = 0
 
-def bfs(vertex):
+def dfs(vertex):
     global cnt
+
     for curr_v in graph[vertex]:
         if not visited[curr_v]:
             cnt += 1
@@ -18,6 +19,6 @@ for _ in range(m):
     graph[y].append(x)
 
 visited[1] = True
-bfs(1)
+dfs(1)
 
 print(cnt)
