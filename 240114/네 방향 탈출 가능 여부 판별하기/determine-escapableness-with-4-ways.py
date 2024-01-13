@@ -10,7 +10,6 @@ visited = [
     for _ in range(n)
 ]
 q = deque()
-cnt = 1
 
 
 def in_range(x, y):
@@ -20,7 +19,7 @@ def in_range(x, y):
 def can_go(x, y):
     if not in_range(x, y):
         return False
-    if visited[x][y]:
+    if not grid[x][y] or visited[x][y]:
         return False
     return True
 
