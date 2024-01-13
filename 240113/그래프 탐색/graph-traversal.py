@@ -10,7 +10,7 @@ def dfs(vertex):
         if not visited[curr_v]:
             cnt += 1
             visited[curr_v] = True
-            bfs(curr_v)
+            dfs(curr_v)
 
 
 for _ in range(m):
