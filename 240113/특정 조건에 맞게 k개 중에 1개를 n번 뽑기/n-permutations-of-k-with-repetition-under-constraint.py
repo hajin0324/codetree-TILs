@@ -7,12 +7,12 @@ def print_ans():
     print()
 
 def choose(curr_num):
-    if curr_num == n + 1:
+    if curr_num == n:
         print_ans()
         return
 
     for i in range(1, k + 1):
-        if curr_num >= 3 and i == ans[curr_num - 1] and i == ans[curr_num - 2]:
+        if curr_num >= 2 and i == ans[curr_num - 1] and i == ans[curr_num - 2]:
             continue
         
         ans.append(i)
@@ -21,4 +21,4 @@ def choose(curr_num):
 
     return
 
-choose(1)
+choose(0)
