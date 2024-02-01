@@ -1,6 +1,8 @@
 const fs = require("fs");
 let n = Number(fs.readFileSync(0).toString().trim());
 
-for (let i = 0; i < n; i++) {
+let i = 1;
+while (i <= n) {
     console.log("*");
+    i += 1;
 }
