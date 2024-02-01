@@ -6,5 +6,7 @@ if (m === 12 || m <= 2) {
 } else if (m <= 5) {
     console.log("Spring");
 } else if (m <= 8) {
+    console.log("Summer");
+} else {
     console.log("Fall");
 }
