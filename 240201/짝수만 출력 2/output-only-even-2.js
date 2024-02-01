@@ -9,7 +9,7 @@ let result = "";
 
 while (i >= a) {
     result += i + " ";
-    i--;
+    i -= 2;
 }
 
 console.log(result);
