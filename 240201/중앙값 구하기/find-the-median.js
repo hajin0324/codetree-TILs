@@ -13,7 +13,7 @@ if (a > b) {
     }
 } else {
     if (c > b) {
-        console.log(c);
+        console.log(b);
     } else {
         console.log(c > a ? c : a);
     }
