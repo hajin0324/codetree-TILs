@@ -6,7 +6,7 @@ let b = Number(input[1]);
 
 let result = "";
 for (let i = b; i >= a; i--) {
-    result = i + " ";
+    result += i + " ";
 }
 
 console.log(result);
