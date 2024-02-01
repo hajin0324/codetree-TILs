@@ -4,7 +4,7 @@ let input = fs.readFileSync(0).toString().trim().split("\n");
 let count = 0;
 for (let i = 0; i < 3; i++) {
     let p = input[i].split(" ");
-    if (p[0] && Number(p[1]) >= 37) {
+    if (p[0] == 'Y' && Number(p[1]) >= 37) {
         count += 1;
     }
 }
