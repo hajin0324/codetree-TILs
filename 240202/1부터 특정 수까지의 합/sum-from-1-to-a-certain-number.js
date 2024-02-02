@@ -4,7 +4,7 @@ function sumN(n) {
         sumVal += i;
     }
 
-    return sumVal / 10;
+    return parseInt(sumVal / 10);
 }
 
 const fs = require("fs");
