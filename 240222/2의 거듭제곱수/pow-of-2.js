@@ -7,6 +7,6 @@ while (true) {
         console.log(cnt);
         break;
     } 
-    x *= 2;
+    x++;
     cnt++;
 }
